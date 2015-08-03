@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <title>auto convert for input forms</title>
+</head>
+<body>
+  <label>
+    delay convert to half-width from full-width
+    <input id="to-half-width-input" type="text">
+  </label>
+  <br>
+  <label>
+    realtime convert to full-width from half-width
+    <input type="text" data-bind="textInput: toFullWidthText">
+  </label>
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="jquery.ba-throttle-debounce.min.js"></script>
+  <script src="knockout-3.3.0.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
